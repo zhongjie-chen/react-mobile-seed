@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV='development' webpack-dev-server --config ./webpack/webpack.dev.js",
-    "server": "pm2 start server/app.js -n react-seed --cwd server --watch server",
+    "server": "pm2 start server/app.js -n react-mobile-seed --cwd server --watch server",
     "beta": "NODE_ENV='production' BETA=true webpack --progress --display-error-details --color --profile --config ./webpack/webpack.prod.js",
     "release": "NODE_ENV='production' BETA=false webpack --progress --display-error-details --color --profile --config ./webpack/webpack.prod.js",
     "dll": "webpack --config webpack/webpack.dll.js"
