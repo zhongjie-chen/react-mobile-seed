@@ -1,7 +1,9 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes, Component } from 'react'
+import { inject, observer } from 'mobx-react';
 import { render } from 'react-dom';
 import './style.less';
-class App extends React.Component {
+
+class App extends Component {
     constructor(props, context) {
         super(props, context);
     }

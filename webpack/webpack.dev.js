@@ -18,6 +18,7 @@ module.exports = merge(webpackBaseConfig, {
             path.join(__dirname, '../src/index.js')
         ]
     },
+    devtool: 'cheap-module-eval-source-map',//开启生成source-map文件功能便于代码调试
     output: {
         path: path.join(__dirname, 'public/'),
         filename: 'js/[name].dev.js',
